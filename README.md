@@ -1,5 +1,5 @@
 # ydoc-plugin-import-assert
-import js and css
+Import js and css files in the page.
 
 ## Install
 ```
