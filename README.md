@@ -1,22 +1,18 @@
 # ydoc-plugin-import-assert
-Import js and css files in the page.
+Import js and css files in the page.import-assert is the default plugin in the ydoc.
 
-## Install
-```
-npm install ydoc-plugin-import-assert
-```
+
 ## Usage
 
 In the ydoc config file, configuration:
 
 ```
 {
-  plugins: [{
-    name: 'import-assert',
-    options: {
+  pluginsConfig: {
+    'import-assert': {
       css: 'custom.css',
       js:  'custom.js'
     }
-  }]
+  }
 }
 ```
