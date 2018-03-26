@@ -1,4 +1,4 @@
-function _importAssert(fn){
+function _importAsset(fn){
   return function(items, type){
     if(!items) return;
     if(typeof items === 'string') items = [items];
@@ -15,8 +15,8 @@ module.exports = {
     if(!this.options || typeof this.options !== 'object'){
       return;
     }
-    var importAssert = _importAssert(this.addAssert);
-    importAssert(this.options.js, 'js');
-    importAssert(this.options.css, 'css')
+    var importAsset = _importAsset(this.addAsset);
+    importAsset(this.options.js, 'js');
+    importAsset(this.options.css, 'css')
   }
 }
